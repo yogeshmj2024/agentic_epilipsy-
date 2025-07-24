@@ -1,0 +1,58 @@
+{
+  "demographics": {
+    "name": "Carol Davis",
+    "age": 46,
+    "gender": "Female",
+    "patient_id": "fc2d8ff2-350c-4e53-9394-dd3f5b61c991"
+  },
+  "diagnosis": {
+    "epilepsy_type": "Combined",
+    "severity_level": "Moderate",
+    "age_at_onset": 35,
+    "diagnosis_date": null,
+    "seizure_types": []
+  },
+  "seizure_analysis": {
+    "total_events": 3,
+    "date_range": {
+      "start": "2024-06-03 10:10:00",
+      "end": "2024-06-20 12:30:00"
+    },
+    "seizure_types": {
+      "Generalized Tonic-Clonic": 2,
+      "Myoclonic": 1
+    },
+    "average_duration": 2.8333333333333335,
+    "average_severity": 5.0,
+    "hourly_pattern": {
+      "10": 1,
+      "15": 1,
+      "12": 1
+    },
+    "day_of_week_pattern": {
+      "0": 2,
+      "3": 1
+    },
+    "monthly_pattern": {
+      "6": 3
+    },
+    "stress_correlation": null
+  },
+  "frequency_metrics": {
+    "30_days": {
+      "total_seizures": 0,
+      "frequency_per_day": 0.0,
+      "frequency_per_week": 0.0,
+      "frequency_per_month": 0.0,
+      "analysis_period_days": 30
+    },
+    "90_days": {
+      "total_seizures": 0,
+      "frequency_per_day": 0.0,
+      "frequency_per_week": 0.0,
+      "frequency_per_month": 0.0,
+      "analysis_period_days": 90
+    }
+  },
+  "report_generated": "2025-07-19T00:01:57.830288"
+}

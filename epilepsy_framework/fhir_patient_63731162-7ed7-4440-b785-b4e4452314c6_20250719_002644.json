@@ -1,0 +1,321 @@
+{
+  "resourceType": "Bundle",
+  "id": "patient-63731162-7ed7-4440-b785-b4e4452314c6-bundle",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-07-19T00:26:44.897323",
+    "profile": [
+      "https://epilepsy-framework.org/fhir/StructureDefinition/EpilepsyBundle"
+    ]
+  },
+  "type": "collection",
+  "timestamp": "2025-07-19T00:26:44.897325",
+  "total": 4,
+  "entry": [
+    {
+      "fullUrl": "https://epilepsy-framework.org/fhir/Patient/63731162-7ed7-4440-b785-b4e4452314c6",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "63731162-7ed7-4440-b785-b4e4452314c6",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2025-07-19T00:26:44.891940",
+          "profile": [
+            "https://epilepsy-framework.org/fhir/StructureDefinition/EpilepsyPatient"
+          ]
+        },
+        "identifier": [
+          {
+            "use": "usual",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "MR",
+                  "display": "Medical Record Number"
+                }
+              ]
+            },
+            "system": "https://epilepsy-framework.org/fhir/patient-id",
+            "value": "63731162-7ed7-4440-b785-b4e4452314c6"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "Watson",
+            "given": [
+              "Emma"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "(555) 000-0000",
+            "use": "home"
+          },
+          {
+            "system": "email",
+            "value": "emma.watson@email.com",
+            "use": "home"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1990-04-15",
+        "address": [],
+        "contact": []
+      }
+    },
+    {
+      "fullUrl": "https://epilepsy-framework.org/fhir/Condition/0b394355-8182-41fa-b2ab-89a56a273200",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "0b394355-8182-41fa-b2ab-89a56a273200",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2025-07-19T00:26:44.892015",
+          "profile": [
+            "https://epilepsy-framework.org/fhir/StructureDefinition/EpilepsyCondition"
+          ]
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis",
+                "display": "Encounter Diagnosis"
+              }
+            ]
+          }
+        ],
+        "severity": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "255604002",
+              "display": "Mild"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "230456007",
+              "display": "Generalized epilepsy"
+            }
+          ],
+          "text": "Generalized Epilepsy"
+        },
+        "subject": {
+          "reference": "Patient/63731162-7ed7-4440-b785-b4e4452314c6",
+          "display": "Emma Watson"
+        },
+        "onsetAge": {
+          "value": 20,
+          "unit": "years",
+          "system": "http://unitsofmeasure.org",
+          "code": "a"
+        },
+        "recordedDate": "2020-01-15",
+        "recorder": null,
+        "note": []
+      }
+    },
+    {
+      "fullUrl": "https://epilepsy-framework.org/fhir/Observation/76267723-fc4d-4c91-adf2-e1abf0b1d41b",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "76267723-fc4d-4c91-adf2-e1abf0b1d41b",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2025-07-19T00:26:44.892076",
+          "profile": [
+            "https://epilepsy-framework.org/fhir/StructureDefinition/SeizureObservation"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey",
+                "display": "Survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "91175000",
+              "display": "Seizure"
+            }
+          ],
+          "text": "Seizure Event"
+        },
+        "subject": {
+          "reference": "Patient/63731162-7ed7-4440-b785-b4e4452314c6",
+          "display": "Emma Watson"
+        },
+        "effectiveDateTime": "2024-05-10T08:30:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "25064002",
+              "display": "Absence seizure"
+            }
+          ],
+          "text": "Absence"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "72133-2",
+                  "display": "Duration"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 10,
+              "unit": "minutes",
+              "system": "http://unitsofmeasure.org",
+              "code": "min"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "72514-3",
+                  "display": "Severity"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 2,
+              "unit": "score",
+              "system": "http://unitsofmeasure.org",
+              "code": "1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://epilepsy-framework.org/fhir/Observation/1399477d-fc4e-4cb0-a3fe-f5e8de6c6e47",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "1399477d-fc4e-4cb0-a3fe-f5e8de6c6e47",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2025-07-19T00:26:44.892129",
+          "profile": [
+            "https://epilepsy-framework.org/fhir/StructureDefinition/SeizureObservation"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey",
+                "display": "Survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "91175000",
+              "display": "Seizure"
+            }
+          ],
+          "text": "Seizure Event"
+        },
+        "subject": {
+          "reference": "Patient/63731162-7ed7-4440-b785-b4e4452314c6",
+          "display": "Emma Watson"
+        },
+        "effectiveDateTime": "2024-05-25T14:15:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "25064002",
+              "display": "Absence seizure"
+            }
+          ],
+          "text": "Absence"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "72133-2",
+                  "display": "Duration"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 8,
+              "unit": "minutes",
+              "system": "http://unitsofmeasure.org",
+              "code": "min"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "72514-3",
+                  "display": "Severity"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 3,
+              "unit": "score",
+              "system": "http://unitsofmeasure.org",
+              "code": "1"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

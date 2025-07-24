@@ -1,0 +1,321 @@
+{
+  "bundle_type": "IHIA_Complete_Exchange",
+  "bundle_id": "8d012bf7-dc70-4523-ad97-c2ae5fb7ebdd",
+  "created_timestamp": "2025-07-19T00:26:44.914107",
+  "message_envelope": {
+    "message_header": {
+      "message_id": "b1d8dfd9-6005-4f77-b8b8-b15799a77431",
+      "timestamp": "2025-07-19T00:26:44.913797",
+      "sender": {
+        "organization_id": "EPILEPSY-FRAMEWORK-ORG",
+        "system_id": "EPILEPSY-FRAMEWORK-SYS-001",
+        "contact_info": "epilepsy-framework@health.org"
+      },
+      "message_type": "health_record_exchange",
+      "priority": "normal",
+      "security_classification": "protected"
+    },
+    "routing_information": {
+      "destination_systems": [
+        "HIE",
+        "EHR",
+        "PHR"
+      ],
+      "delivery_method": "secure_transport",
+      "acknowledgment_required": true
+    },
+    "payload": {
+      "content_type": "application/json",
+      "schema_reference": "IHIA-HealthRecord-v2.1",
+      "data": {
+        "record_id": "IHIA-EPILEPSY-FRAMEWORK-ORG-b4a4c1e7-495e-4ccf-bcb9-c1224b7e9972",
+        "patient_identifier": "6d6dc9e8-5abc-43a3-9cbd-374e69394a93",
+        "source_system": "EPILEPSY-FRAMEWORK-SYS-001",
+        "record_type": "comprehensive",
+        "clinical_domain": "neurology",
+        "data_elements": {
+          "demographics": {
+            "patient_name": "Sarah Rodriguez",
+            "date_of_birth": "1992-12-05",
+            "gender": "Female",
+            "identifiers": {
+              "medical_record_number": "6d6dc9e8-5abc-43a3-9cbd-374e69394a93",
+              "insurance_id": null
+            }
+          },
+          "conditions": [
+            {
+              "condition_code": "ICD-10:G40.9",
+              "condition_name": "Epilepsy",
+              "condition_type": "Combined",
+              "severity": "Moderate",
+              "onset_date": "2020-01-15",
+              "clinical_status": "active"
+            }
+          ],
+          "encounters": [
+            {
+              "encounter_id": "df54c52b-ce08-47cb-a3d0-332fa0bd8f00",
+              "encounter_type": "seizure_event",
+              "encounter_date": "2024-06-01T13:20:00",
+              "clinical_details": {
+                "seizure_type": "Myoclonic",
+                "duration_minutes": 5,
+                "severity_score": 4,
+                "triggers": [],
+                "hospitalization_required": false
+              }
+            },
+            {
+              "encounter_id": "05562785-bc3e-4bdd-af00-0d7f11c35ccf",
+              "encounter_type": "seizure_event",
+              "encounter_date": "2024-06-12T10:15:00",
+              "clinical_details": {
+                "seizure_type": "Generalized Tonic-Clonic",
+                "duration_minutes": 90,
+                "severity_score": 6,
+                "triggers": [],
+                "hospitalization_required": false
+              }
+            },
+            {
+              "encounter_id": "4e06cbb9-c569-4d01-81ca-d8a62086b275",
+              "encounter_type": "seizure_event",
+              "encounter_date": "2024-06-20T15:45:00",
+              "clinical_details": {
+                "seizure_type": "Absence",
+                "duration_minutes": 15,
+                "severity_score": 3,
+                "triggers": [],
+                "hospitalization_required": false
+              }
+            }
+          ],
+          "treatments": [],
+          "outcomes": []
+        },
+        "metadata": {
+          "schema_version": "IHIA-v2.1",
+          "data_format": "JSON",
+          "encoding": "UTF-8",
+          "source_system_version": "1.0.0",
+          "interoperability_standards": [
+            "FHIR R4",
+            "HL7 v2.8",
+            "OpenEHR",
+            "IHE XDS"
+          ]
+        },
+        "governance": {
+          "data_steward": "Epilepsy Framework System",
+          "privacy_classification": "Protected Health Information",
+          "retention_period": "10 years",
+          "access_controls": [
+            "authorized_healthcare_providers",
+            "patient_portal"
+          ],
+          "audit_trail": [
+            {
+              "action": "create",
+              "timestamp": "2025-07-19T00:26:44.913777",
+              "user": "system",
+              "details": "Initial record creation"
+            }
+          ],
+          "consent_status": "active",
+          "data_quality_score": 0.95
+        },
+        "created_timestamp": "2025-07-19 00:26:44.913781",
+        "last_updated": "2025-07-19 00:26:44.913781"
+      }
+    },
+    "security": {
+      "encryption_standard": "AES-256",
+      "digital_signature": "present",
+      "authentication_method": "PKI"
+    }
+  },
+  "health_record": {
+    "record_id": "IHIA-EPILEPSY-FRAMEWORK-ORG-b4a4c1e7-495e-4ccf-bcb9-c1224b7e9972",
+    "patient_identifier": "6d6dc9e8-5abc-43a3-9cbd-374e69394a93",
+    "source_system": "EPILEPSY-FRAMEWORK-SYS-001",
+    "record_type": "comprehensive",
+    "clinical_domain": "neurology",
+    "data_elements": {
+      "demographics": {
+        "patient_name": "Sarah Rodriguez",
+        "date_of_birth": "1992-12-05",
+        "gender": "Female",
+        "identifiers": {
+          "medical_record_number": "6d6dc9e8-5abc-43a3-9cbd-374e69394a93",
+          "insurance_id": null
+        }
+      },
+      "conditions": [
+        {
+          "condition_code": "ICD-10:G40.9",
+          "condition_name": "Epilepsy",
+          "condition_type": "Combined",
+          "severity": "Moderate",
+          "onset_date": "2020-01-15",
+          "clinical_status": "active"
+        }
+      ],
+      "encounters": [
+        {
+          "encounter_id": "df54c52b-ce08-47cb-a3d0-332fa0bd8f00",
+          "encounter_type": "seizure_event",
+          "encounter_date": "2024-06-01T13:20:00",
+          "clinical_details": {
+            "seizure_type": "Myoclonic",
+            "duration_minutes": 5,
+            "severity_score": 4,
+            "triggers": [],
+            "hospitalization_required": false
+          }
+        },
+        {
+          "encounter_id": "05562785-bc3e-4bdd-af00-0d7f11c35ccf",
+          "encounter_type": "seizure_event",
+          "encounter_date": "2024-06-12T10:15:00",
+          "clinical_details": {
+            "seizure_type": "Generalized Tonic-Clonic",
+            "duration_minutes": 90,
+            "severity_score": 6,
+            "triggers": [],
+            "hospitalization_required": false
+          }
+        },
+        {
+          "encounter_id": "4e06cbb9-c569-4d01-81ca-d8a62086b275",
+          "encounter_type": "seizure_event",
+          "encounter_date": "2024-06-20T15:45:00",
+          "clinical_details": {
+            "seizure_type": "Absence",
+            "duration_minutes": 15,
+            "severity_score": 3,
+            "triggers": [],
+            "hospitalization_required": false
+          }
+        }
+      ],
+      "treatments": [],
+      "outcomes": []
+    },
+    "metadata": {
+      "schema_version": "IHIA-v2.1",
+      "data_format": "JSON",
+      "encoding": "UTF-8",
+      "source_system_version": "1.0.0",
+      "interoperability_standards": [
+        "FHIR R4",
+        "HL7 v2.8",
+        "OpenEHR",
+        "IHE XDS"
+      ]
+    },
+    "governance": {
+      "data_steward": "Epilepsy Framework System",
+      "privacy_classification": "Protected Health Information",
+      "retention_period": "10 years",
+      "access_controls": [
+        "authorized_healthcare_providers",
+        "patient_portal"
+      ],
+      "audit_trail": [
+        {
+          "action": "create",
+          "timestamp": "2025-07-19T00:26:44.913777",
+          "user": "system",
+          "details": "Initial record creation"
+        }
+      ],
+      "consent_status": "active",
+      "data_quality_score": 0.95
+    },
+    "created_timestamp": "2025-07-19 00:26:44.913781",
+    "last_updated": "2025-07-19 00:26:44.913781"
+  },
+  "registry_entry": {
+    "registry_id": "REG-9e071fab-7efa-4df4-936d-7d56b49a941b",
+    "record_metadata": {
+      "record_id": "IHIA-EPILEPSY-FRAMEWORK-ORG-b4a4c1e7-495e-4ccf-bcb9-c1224b7e9972",
+      "patient_identifier": "6d6dc9e8-5abc-43a3-9cbd-374e69394a93",
+      "source_system": "EPILEPSY-FRAMEWORK-SYS-001",
+      "clinical_domain": "neurology",
+      "record_type": "comprehensive"
+    },
+    "availability": {
+      "status": "available",
+      "last_updated": "2025-07-19T00:26:44.913781",
+      "access_method": "API",
+      "query_endpoint": "https://api.ihia.gov/records/IHIA-EPILEPSY-FRAMEWORK-ORG-b4a4c1e7-495e-4ccf-bcb9-c1224b7e9972"
+    },
+    "content_summary": {
+      "data_elements": [
+        "demographics",
+        "conditions",
+        "encounters",
+        "treatments",
+        "outcomes"
+      ],
+      "record_size": 1306,
+      "quality_indicators": {
+        "completeness": 0.95,
+        "accuracy": 0.95,
+        "timeliness": 0.9
+      }
+    },
+    "governance": {
+      "privacy_level": "Protected Health Information",
+      "access_controls": [
+        "authorized_healthcare_providers",
+        "patient_portal"
+      ],
+      "retention_policy": "10 years"
+    },
+    "registered_timestamp": "2025-07-19T00:26:44.914090"
+  },
+  "validation_results": {
+    "is_compliant": true,
+    "compliance_score": 1.0,
+    "validation_timestamp": "2025-07-19T00:26:44.914093",
+    "checks": [
+      {
+        "check_name": "Required Fields",
+        "description": "Verify all required IHIA fields are present",
+        "status": "pass",
+        "details": "All required fields present"
+      },
+      {
+        "check_name": "Data Format",
+        "description": "Validate data format compliance",
+        "status": "pass",
+        "details": "JSON format validated"
+      },
+      {
+        "check_name": "Privacy Controls",
+        "description": "Verify privacy and security controls",
+        "status": "pass",
+        "details": "Privacy classification and access controls defined"
+      },
+      {
+        "check_name": "Interoperability Standards",
+        "description": "Check adherence to interoperability standards",
+        "status": "pass",
+        "details": "FHIR, HL7, OpenEHR compliance verified"
+      },
+      {
+        "check_name": "Data Governance",
+        "description": "Validate data governance metadata",
+        "status": "pass",
+        "details": "Data steward and governance policies defined"
+      }
+    ]
+  },
+  "metadata": {
+    "framework_version": "IHIA-v2.1",
+    "epilepsy_framework_version": "1.0.0",
+    "export_timestamp": "2025-07-19T00:26:44.914345"
+  }
+}

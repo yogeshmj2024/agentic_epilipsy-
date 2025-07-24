@@ -1,0 +1,101 @@
+patient_id,patient_name,age,gender,disease,seizure_frequency,seizure_duration,severity,medication,treatment_outcome,record_date
+9410,Patient_8625,63,Male,Epilepsy,13,7.352681964108409,Mild,Valproic Acid,Worsened,2024-10-12
+7820,Patient_8845,84,Female,Parkinson's Disease,7,9.550843571912829,Mild,Lamotrigine,Worsened,2025-01-13
+3404,Patient_4805,47,Male,Epilepsy,19,5.7638509440422485,Severe,Levetiracetam,Improved,2024-11-03
+2349,Patient_5711,87,Male,Migraine,18,9.307761943819473,Moderate,Lamotrigine,Stable,2024-11-28
+7172,Patient_2437,48,Male,Parkinson's Disease,2,3.2154464157315363,Mild,Levetiracetam,Stable,2025-01-05
+5173,Patient_5497,28,Female,Epilepsy,4,9.49065210401626,Mild,Levetiracetam,Improved,2025-06-07
+4224,Patient_6341,49,Male,Migraine,5,5.9525021880089986,Moderate,Valproic Acid,Stable,2024-12-07
+2167,Patient_5414,42,Female,Migraine,4,5.669237867422753,Mild,Lamotrigine,Stable,2024-07-30
+7149,Patient_5058,89,Male,Migraine,14,0.10673838131046898,Mild,Levetiracetam,Improved,2025-05-24
+5323,Patient_6204,58,Female,Migraine,3,2.3971118873758352,Severe,Valproic Acid,Worsened,2024-10-02
+9640,Patient_4470,86,Male,Migraine,18,4.445399879258657,Moderate,Valproic Acid,Improved,2025-03-22
+9836,Patient_1881,28,Female,Parkinson's Disease,17,0.6447698320154247,Severe,Lamotrigine,Worsened,2024-08-16
+1405,Patient_9195,81,Female,Epilepsy,20,8.948808375874766,Severe,Valproic Acid,Worsened,2025-07-10
+2507,Patient_9903,67,Female,Parkinson's Disease,14,2.802257451039303,Moderate,Lamotrigine,Stable,2025-07-19
+4897,Patient_8917,47,Female,Migraine,16,0.5839480926923242,Moderate,Valproic Acid,Worsened,2024-08-27
+7309,Patient_6766,48,Female,Parkinson's Disease,2,8.135795610629659,Mild,Levetiracetam,Stable,2025-02-02
+1163,Patient_4724,69,Male,Migraine,15,2.1451920944845044,Mild,Lamotrigine,Improved,2024-07-22
+9788,Patient_3291,85,Female,Epilepsy,5,1.9534472024606986,Mild,Levetiracetam,Stable,2025-05-24
+2252,Patient_4462,88,Female,Migraine,15,8.55441536127277,Moderate,Lamotrigine,Improved,2025-06-04
+3647,Patient_3846,85,Male,Parkinson's Disease,2,5.60561365613829,Mild,Levetiracetam,Stable,2024-11-27
+5013,Patient_2130,80,Male,Epilepsy,4,5.844708027515011,Moderate,Levetiracetam,Worsened,2024-10-14
+2671,Patient_9660,14,Female,Parkinson's Disease,10,0.18751701829460743,Mild,Lamotrigine,Worsened,2025-02-05
+5981,Patient_5921,71,Female,Parkinson's Disease,8,0.9079571099146019,Severe,Levetiracetam,Improved,2024-10-09
+3601,Patient_2914,47,Male,Migraine,14,4.311678212949254,Mild,Lamotrigine,Stable,2025-06-07
+7613,Patient_2739,27,Female,Epilepsy,3,6.7589551569032755,Moderate,Levetiracetam,Worsened,2024-08-12
+8728,Patient_8475,71,Male,Migraine,14,6.456593404858562,Moderate,Levetiracetam,Improved,2025-06-05
+5073,Patient_5320,62,Male,Parkinson's Disease,17,4.567964233803039,Severe,Valproic Acid,Stable,2024-08-26
+4514,Patient_3032,73,Female,Migraine,14,9.652572332475788,Severe,Levetiracetam,Stable,2025-05-24
+2670,Patient_3456,44,Male,Epilepsy,20,9.084919221936167,Mild,Valproic Acid,Stable,2025-03-25
+5676,Patient_2436,46,Female,Epilepsy,2,6.349138836324957,Severe,Lamotrigine,Improved,2024-07-22
+1790,Patient_7584,12,Male,Parkinson's Disease,15,9.476338973716398,Moderate,Valproic Acid,Stable,2024-10-23
+8623,Patient_5256,59,Female,Parkinson's Disease,8,1.520553780170799,Mild,Levetiracetam,Stable,2024-08-15
+2626,Patient_9180,77,Female,Epilepsy,8,5.939399970491404,Moderate,Levetiracetam,Improved,2025-04-14
+1383,Patient_9078,36,Female,Parkinson's Disease,15,7.989801143940971,Severe,Levetiracetam,Stable,2024-11-04
+2912,Patient_4540,12,Male,Migraine,4,5.505678519022382,Severe,Valproic Acid,Improved,2025-04-15
+9183,Patient_7567,55,Female,Migraine,1,2.155087403125074,Mild,Levetiracetam,Improved,2024-07-24
+8153,Patient_9087,60,Female,Migraine,18,9.578926137242018,Severe,Levetiracetam,Worsened,2024-10-21
+2712,Patient_2146,61,Female,Migraine,19,9.6763216785921,Moderate,Lamotrigine,Improved,2024-08-29
+7825,Patient_6270,78,Female,Migraine,7,6.5100016287765365,Moderate,Valproic Acid,Worsened,2025-02-17
+2839,Patient_8597,74,Female,Migraine,9,1.2755176966247912,Severe,Lamotrigine,Improved,2025-01-07
+5317,Patient_3521,18,Male,Parkinson's Disease,20,5.865194814840893,Severe,Lamotrigine,Worsened,2024-12-04
+1631,Patient_9334,17,Female,Epilepsy,11,8.191373516095629,Severe,Levetiracetam,Stable,2024-11-25
+8808,Patient_8967,76,Female,Epilepsy,10,8.01795234322124,Moderate,Levetiracetam,Worsened,2025-01-05
+8505,Patient_5451,72,Male,Parkinson's Disease,9,0.24047804206542678,Severe,Levetiracetam,Improved,2024-09-30
+2943,Patient_7181,55,Female,Parkinson's Disease,9,4.4913505550806265,Moderate,Valproic Acid,Stable,2025-01-16
+1126,Patient_7299,29,Male,Migraine,5,6.210626024111911,Severe,Levetiracetam,Worsened,2025-03-07
+1141,Patient_5634,84,Male,Parkinson's Disease,17,5.708815962424911,Mild,Levetiracetam,Worsened,2024-07-28
+8499,Patient_4418,14,Female,Parkinson's Disease,18,5.5213999137105825,Moderate,Levetiracetam,Stable,2024-10-15
+8620,Patient_7369,12,Male,Migraine,3,5.099008273200121,Moderate,Valproic Acid,Worsened,2025-06-10
+8860,Patient_2778,81,Female,Parkinson's Disease,6,7.438913827998929,Mild,Lamotrigine,Stable,2024-10-20
+1285,Patient_4196,60,Female,Migraine,15,4.012958816706224,Moderate,Lamotrigine,Improved,2024-09-18
+8381,Patient_7066,57,Female,Epilepsy,14,8.477452336477088,Mild,Levetiracetam,Worsened,2025-01-25
+6045,Patient_9751,31,Female,Migraine,4,6.503690024388653,Mild,Valproic Acid,Improved,2024-12-07
+4002,Patient_2160,78,Female,Migraine,0,5.001663638350895,Severe,Levetiracetam,Worsened,2024-11-07
+6759,Patient_1207,46,Male,Migraine,6,5.549528587544144,Moderate,Lamotrigine,Improved,2025-07-02
+4976,Patient_2175,43,Male,Parkinson's Disease,2,4.796886189850106,Moderate,Valproic Acid,Stable,2024-12-03
+7590,Patient_6412,77,Male,Parkinson's Disease,15,0.18074907256835504,Mild,Valproic Acid,Worsened,2025-01-25
+9051,Patient_1079,52,Female,Epilepsy,17,4.358254555266805,Moderate,Valproic Acid,Worsened,2024-07-21
+4399,Patient_6067,36,Male,Epilepsy,18,6.897264449090576,Severe,Levetiracetam,Stable,2024-11-25
+9164,Patient_2591,62,Male,Migraine,20,5.471081176612337,Severe,Valproic Acid,Worsened,2025-04-01
+6298,Patient_4773,54,Male,Epilepsy,19,1.0811602120263155,Mild,Levetiracetam,Improved,2025-04-05
+7381,Patient_3952,75,Female,Parkinson's Disease,13,2.3494623133084267,Severe,Valproic Acid,Stable,2025-03-02
+2651,Patient_1648,12,Male,Parkinson's Disease,13,1.3475182724628325,Mild,Levetiracetam,Worsened,2025-07-09
+4356,Patient_2772,80,Male,Epilepsy,9,0.8508382155101486,Severe,Valproic Acid,Stable,2024-10-02
+1862,Patient_8987,10,Male,Migraine,3,3.2475812956845767,Mild,Valproic Acid,Worsened,2024-10-13
+1327,Patient_8717,39,Female,Parkinson's Disease,18,9.410419399608191,Severe,Lamotrigine,Worsened,2024-08-18
+6450,Patient_3048,85,Female,Migraine,16,8.212344998003593,Mild,Valproic Acid,Stable,2025-02-27
+7828,Patient_1314,76,Male,Migraine,3,0.19332873886487667,Mild,Lamotrigine,Worsened,2024-11-06
+8069,Patient_5042,24,Male,Epilepsy,15,3.8477069490531344,Severe,Valproic Acid,Worsened,2024-08-31
+1408,Patient_6098,81,Female,Epilepsy,4,3.725290817070528,Mild,Valproic Acid,Worsened,2025-01-12
+4667,Patient_4083,67,Male,Migraine,4,3.1153654247670888,Mild,Lamotrigine,Stable,2025-05-31
+4007,Patient_8902,34,Female,Parkinson's Disease,1,6.036433049962305,Moderate,Lamotrigine,Worsened,2025-02-01
+1964,Patient_9460,55,Male,Parkinson's Disease,19,5.575522600820989,Mild,Levetiracetam,Improved,2024-08-31
+5795,Patient_9285,25,Male,Parkinson's Disease,17,4.1210889246930575,Mild,Levetiracetam,Stable,2025-04-08
+6565,Patient_4932,73,Female,Parkinson's Disease,4,5.914796154631944,Mild,Lamotrigine,Worsened,2024-10-29
+8921,Patient_2257,72,Male,Migraine,11,8.480199773028003,Moderate,Lamotrigine,Worsened,2024-12-25
+7650,Patient_4787,51,Male,Migraine,2,2.1042894793447777,Mild,Levetiracetam,Worsened,2024-08-07
+1553,Patient_4654,30,Male,Epilepsy,10,5.238820265116571,Moderate,Lamotrigine,Worsened,2025-05-04
+6417,Patient_6261,32,Male,Migraine,13,6.674634344642287,Severe,Valproic Acid,Improved,2025-05-23
+4040,Patient_8306,75,Female,Epilepsy,1,5.352472572190131,Mild,Lamotrigine,Improved,2024-09-24
+8109,Patient_9679,37,Female,Migraine,19,7.4192542352788164,Moderate,Valproic Acid,Stable,2025-01-08
+3430,Patient_7488,65,Male,Epilepsy,16,7.129197325279822,Moderate,Valproic Acid,Stable,2025-03-18
+7826,Patient_6447,82,Male,Migraine,12,5.470916092071395,Severe,Valproic Acid,Worsened,2025-07-09
+8140,Patient_3681,79,Female,Migraine,10,0.8649231511373642,Severe,Valproic Acid,Stable,2024-08-15
+3285,Patient_5582,62,Male,Migraine,6,9.253630810060704,Moderate,Lamotrigine,Stable,2024-11-06
+5675,Patient_3597,35,Female,Parkinson's Disease,13,1.099757650608783,Severe,Lamotrigine,Worsened,2024-09-01
+8678,Patient_6146,30,Female,Epilepsy,18,7.013073153588507,Moderate,Lamotrigine,Improved,2025-07-16
+5166,Patient_5974,76,Male,Migraine,19,0.7689322785326059,Moderate,Levetiracetam,Stable,2025-02-13
+3209,Patient_8327,68,Male,Parkinson's Disease,2,3.952574191734465,Mild,Lamotrigine,Stable,2025-05-15
+2011,Patient_6155,62,Male,Epilepsy,16,7.404230804249059,Mild,Valproic Acid,Stable,2024-11-12
+8771,Patient_3280,63,Female,Parkinson's Disease,7,5.01345377748581,Severe,Lamotrigine,Stable,2025-02-03
+5869,Patient_8037,44,Female,Epilepsy,20,7.44589617148824,Severe,Lamotrigine,Improved,2024-08-16
+9246,Patient_3065,62,Male,Parkinson's Disease,17,2.456857857660287,Mild,Lamotrigine,Improved,2025-06-08
+1104,Patient_8000,18,Male,Epilepsy,18,2.480093468969395,Moderate,Lamotrigine,Worsened,2024-07-27
+6623,Patient_6552,48,Female,Parkinson's Disease,12,8.957769370386677,Mild,Lamotrigine,Improved,2024-12-05
+6214,Patient_9473,38,Male,Epilepsy,19,9.845679012716655,Moderate,Levetiracetam,Worsened,2025-04-25
+2783,Patient_7914,89,Female,Migraine,1,7.601455962981158,Mild,Lamotrigine,Stable,2024-11-04
+1883,Patient_7472,62,Male,Parkinson's Disease,6,4.378919068115119,Moderate,Levetiracetam,Improved,2025-02-10
+9184,Patient_1991,76,Female,Epilepsy,1,6.890031648078299,Moderate,Valproic Acid,Stable,2025-04-27
+7307,Patient_3127,52,Female,Epilepsy,14,5.854290329219672,Severe,Valproic Acid,Worsened,2025-03-26

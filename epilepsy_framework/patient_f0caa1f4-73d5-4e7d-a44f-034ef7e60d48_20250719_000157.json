@@ -1,0 +1,61 @@
+{
+  "demographics": {
+    "name": "Bob Smith",
+    "age": 33,
+    "gender": "Male",
+    "patient_id": "f0caa1f4-73d5-4e7d-a44f-034ef7e60d48"
+  },
+  "diagnosis": {
+    "epilepsy_type": "Focal",
+    "severity_level": "Severe",
+    "age_at_onset": 22,
+    "diagnosis_date": null,
+    "seizure_types": []
+  },
+  "seizure_analysis": {
+    "total_events": 4,
+    "date_range": {
+      "start": "2024-06-02 11:45:00",
+      "end": "2024-06-12 13:15:00"
+    },
+    "seizure_types": {
+      "Focal Aware": 2,
+      "Focal Impaired Awareness": 1,
+      "Focal to Bilateral Tonic-Clonic": 1
+    },
+    "average_duration": 7.5,
+    "average_severity": 7.5,
+    "hourly_pattern": {
+      "11": 1,
+      "16": 1,
+      "7": 1,
+      "13": 1
+    },
+    "day_of_week_pattern": {
+      "2": 2,
+      "6": 1,
+      "5": 1
+    },
+    "monthly_pattern": {
+      "6": 4
+    },
+    "stress_correlation": null
+  },
+  "frequency_metrics": {
+    "30_days": {
+      "total_seizures": 0,
+      "frequency_per_day": 0.0,
+      "frequency_per_week": 0.0,
+      "frequency_per_month": 0.0,
+      "analysis_period_days": 30
+    },
+    "90_days": {
+      "total_seizures": 0,
+      "frequency_per_day": 0.0,
+      "frequency_per_week": 0.0,
+      "frequency_per_month": 0.0,
+      "analysis_period_days": 90
+    }
+  },
+  "report_generated": "2025-07-19T00:01:57.826729"
+}

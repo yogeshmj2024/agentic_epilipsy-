@@ -1,0 +1,321 @@
+{
+  "bundle_type": "IHIA_Complete_Exchange",
+  "bundle_id": "d1a6c24b-9c9d-45ca-831a-81c89a2c10d7",
+  "created_timestamp": "2025-07-19T00:26:44.907002",
+  "message_envelope": {
+    "message_header": {
+      "message_id": "ffde69fd-69df-4ad1-b49d-140814778712",
+      "timestamp": "2025-07-19T00:26:44.906676",
+      "sender": {
+        "organization_id": "EPILEPSY-FRAMEWORK-ORG",
+        "system_id": "EPILEPSY-FRAMEWORK-SYS-001",
+        "contact_info": "epilepsy-framework@health.org"
+      },
+      "message_type": "health_record_exchange",
+      "priority": "normal",
+      "security_classification": "protected"
+    },
+    "routing_information": {
+      "destination_systems": [
+        "HIE",
+        "EHR",
+        "PHR"
+      ],
+      "delivery_method": "secure_transport",
+      "acknowledgment_required": true
+    },
+    "payload": {
+      "content_type": "application/json",
+      "schema_reference": "IHIA-HealthRecord-v2.1",
+      "data": {
+        "record_id": "IHIA-EPILEPSY-FRAMEWORK-ORG-9ec9bb61-7a8b-456e-9200-0245fe801b8b",
+        "patient_identifier": "7b747e17-2ed3-4c02-8348-b1d7aae7a2b6",
+        "source_system": "EPILEPSY-FRAMEWORK-SYS-001",
+        "record_type": "comprehensive",
+        "clinical_domain": "neurology",
+        "data_elements": {
+          "demographics": {
+            "patient_name": "Michael Chen",
+            "date_of_birth": "1985-08-22",
+            "gender": "Male",
+            "identifiers": {
+              "medical_record_number": "7b747e17-2ed3-4c02-8348-b1d7aae7a2b6",
+              "insurance_id": null
+            }
+          },
+          "conditions": [
+            {
+              "condition_code": "ICD-10:G40.9",
+              "condition_name": "Epilepsy",
+              "condition_type": "Focal",
+              "severity": "Severe",
+              "onset_date": "2020-01-15",
+              "clinical_status": "active"
+            }
+          ],
+          "encounters": [
+            {
+              "encounter_id": "7b5a1d7f-db66-4c0a-8df0-fb67a1b0208f",
+              "encounter_type": "seizure_event",
+              "encounter_date": "2024-06-02T11:45:00",
+              "clinical_details": {
+                "seizure_type": "Focal Aware",
+                "duration_minutes": 120,
+                "severity_score": 8,
+                "triggers": [],
+                "hospitalization_required": false
+              }
+            },
+            {
+              "encounter_id": "f036ab58-448f-423b-be4d-0396472aa754",
+              "encounter_type": "seizure_event",
+              "encounter_date": "2024-06-08T16:20:00",
+              "clinical_details": {
+                "seizure_type": "Focal to Bilateral Tonic-Clonic",
+                "duration_minutes": 300,
+                "severity_score": 9,
+                "triggers": [],
+                "hospitalization_required": false
+              }
+            },
+            {
+              "encounter_id": "583d10b5-af0c-4b81-917c-a3b476c39c0f",
+              "encounter_type": "seizure_event",
+              "encounter_date": "2024-06-15T09:30:00",
+              "clinical_details": {
+                "seizure_type": "Focal Impaired Awareness",
+                "duration_minutes": 180,
+                "severity_score": 7,
+                "triggers": [],
+                "hospitalization_required": false
+              }
+            }
+          ],
+          "treatments": [],
+          "outcomes": []
+        },
+        "metadata": {
+          "schema_version": "IHIA-v2.1",
+          "data_format": "JSON",
+          "encoding": "UTF-8",
+          "source_system_version": "1.0.0",
+          "interoperability_standards": [
+            "FHIR R4",
+            "HL7 v2.8",
+            "OpenEHR",
+            "IHE XDS"
+          ]
+        },
+        "governance": {
+          "data_steward": "Epilepsy Framework System",
+          "privacy_classification": "Protected Health Information",
+          "retention_period": "10 years",
+          "access_controls": [
+            "authorized_healthcare_providers",
+            "patient_portal"
+          ],
+          "audit_trail": [
+            {
+              "action": "create",
+              "timestamp": "2025-07-19T00:26:44.906655",
+              "user": "system",
+              "details": "Initial record creation"
+            }
+          ],
+          "consent_status": "active",
+          "data_quality_score": 0.95
+        },
+        "created_timestamp": "2025-07-19 00:26:44.906659",
+        "last_updated": "2025-07-19 00:26:44.906660"
+      }
+    },
+    "security": {
+      "encryption_standard": "AES-256",
+      "digital_signature": "present",
+      "authentication_method": "PKI"
+    }
+  },
+  "health_record": {
+    "record_id": "IHIA-EPILEPSY-FRAMEWORK-ORG-9ec9bb61-7a8b-456e-9200-0245fe801b8b",
+    "patient_identifier": "7b747e17-2ed3-4c02-8348-b1d7aae7a2b6",
+    "source_system": "EPILEPSY-FRAMEWORK-SYS-001",
+    "record_type": "comprehensive",
+    "clinical_domain": "neurology",
+    "data_elements": {
+      "demographics": {
+        "patient_name": "Michael Chen",
+        "date_of_birth": "1985-08-22",
+        "gender": "Male",
+        "identifiers": {
+          "medical_record_number": "7b747e17-2ed3-4c02-8348-b1d7aae7a2b6",
+          "insurance_id": null
+        }
+      },
+      "conditions": [
+        {
+          "condition_code": "ICD-10:G40.9",
+          "condition_name": "Epilepsy",
+          "condition_type": "Focal",
+          "severity": "Severe",
+          "onset_date": "2020-01-15",
+          "clinical_status": "active"
+        }
+      ],
+      "encounters": [
+        {
+          "encounter_id": "7b5a1d7f-db66-4c0a-8df0-fb67a1b0208f",
+          "encounter_type": "seizure_event",
+          "encounter_date": "2024-06-02T11:45:00",
+          "clinical_details": {
+            "seizure_type": "Focal Aware",
+            "duration_minutes": 120,
+            "severity_score": 8,
+            "triggers": [],
+            "hospitalization_required": false
+          }
+        },
+        {
+          "encounter_id": "f036ab58-448f-423b-be4d-0396472aa754",
+          "encounter_type": "seizure_event",
+          "encounter_date": "2024-06-08T16:20:00",
+          "clinical_details": {
+            "seizure_type": "Focal to Bilateral Tonic-Clonic",
+            "duration_minutes": 300,
+            "severity_score": 9,
+            "triggers": [],
+            "hospitalization_required": false
+          }
+        },
+        {
+          "encounter_id": "583d10b5-af0c-4b81-917c-a3b476c39c0f",
+          "encounter_type": "seizure_event",
+          "encounter_date": "2024-06-15T09:30:00",
+          "clinical_details": {
+            "seizure_type": "Focal Impaired Awareness",
+            "duration_minutes": 180,
+            "severity_score": 7,
+            "triggers": [],
+            "hospitalization_required": false
+          }
+        }
+      ],
+      "treatments": [],
+      "outcomes": []
+    },
+    "metadata": {
+      "schema_version": "IHIA-v2.1",
+      "data_format": "JSON",
+      "encoding": "UTF-8",
+      "source_system_version": "1.0.0",
+      "interoperability_standards": [
+        "FHIR R4",
+        "HL7 v2.8",
+        "OpenEHR",
+        "IHE XDS"
+      ]
+    },
+    "governance": {
+      "data_steward": "Epilepsy Framework System",
+      "privacy_classification": "Protected Health Information",
+      "retention_period": "10 years",
+      "access_controls": [
+        "authorized_healthcare_providers",
+        "patient_portal"
+      ],
+      "audit_trail": [
+        {
+          "action": "create",
+          "timestamp": "2025-07-19T00:26:44.906655",
+          "user": "system",
+          "details": "Initial record creation"
+        }
+      ],
+      "consent_status": "active",
+      "data_quality_score": 0.95
+    },
+    "created_timestamp": "2025-07-19 00:26:44.906659",
+    "last_updated": "2025-07-19 00:26:44.906660"
+  },
+  "registry_entry": {
+    "registry_id": "REG-34e5f8e2-4f3f-4873-8ae6-9e90be68f2d4",
+    "record_metadata": {
+      "record_id": "IHIA-EPILEPSY-FRAMEWORK-ORG-9ec9bb61-7a8b-456e-9200-0245fe801b8b",
+      "patient_identifier": "7b747e17-2ed3-4c02-8348-b1d7aae7a2b6",
+      "source_system": "EPILEPSY-FRAMEWORK-SYS-001",
+      "clinical_domain": "neurology",
+      "record_type": "comprehensive"
+    },
+    "availability": {
+      "status": "available",
+      "last_updated": "2025-07-19T00:26:44.906660",
+      "access_method": "API",
+      "query_endpoint": "https://api.ihia.gov/records/IHIA-EPILEPSY-FRAMEWORK-ORG-9ec9bb61-7a8b-456e-9200-0245fe801b8b"
+    },
+    "content_summary": {
+      "data_elements": [
+        "demographics",
+        "conditions",
+        "encounters",
+        "treatments",
+        "outcomes"
+      ],
+      "record_size": 1326,
+      "quality_indicators": {
+        "completeness": 0.95,
+        "accuracy": 0.95,
+        "timeliness": 0.9
+      }
+    },
+    "governance": {
+      "privacy_level": "Protected Health Information",
+      "access_controls": [
+        "authorized_healthcare_providers",
+        "patient_portal"
+      ],
+      "retention_policy": "10 years"
+    },
+    "registered_timestamp": "2025-07-19T00:26:44.906983"
+  },
+  "validation_results": {
+    "is_compliant": true,
+    "compliance_score": 1.0,
+    "validation_timestamp": "2025-07-19T00:26:44.906987",
+    "checks": [
+      {
+        "check_name": "Required Fields",
+        "description": "Verify all required IHIA fields are present",
+        "status": "pass",
+        "details": "All required fields present"
+      },
+      {
+        "check_name": "Data Format",
+        "description": "Validate data format compliance",
+        "status": "pass",
+        "details": "JSON format validated"
+      },
+      {
+        "check_name": "Privacy Controls",
+        "description": "Verify privacy and security controls",
+        "status": "pass",
+        "details": "Privacy classification and access controls defined"
+      },
+      {
+        "check_name": "Interoperability Standards",
+        "description": "Check adherence to interoperability standards",
+        "status": "pass",
+        "details": "FHIR, HL7, OpenEHR compliance verified"
+      },
+      {
+        "check_name": "Data Governance",
+        "description": "Validate data governance metadata",
+        "status": "pass",
+        "details": "Data steward and governance policies defined"
+      }
+    ]
+  },
+  "metadata": {
+    "framework_version": "IHIA-v2.1",
+    "epilepsy_framework_version": "1.0.0",
+    "export_timestamp": "2025-07-19T00:26:44.907249"
+  }
+}

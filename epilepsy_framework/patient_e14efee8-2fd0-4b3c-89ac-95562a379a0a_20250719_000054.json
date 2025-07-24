@@ -1,0 +1,58 @@
+{
+  "demographics": {
+    "name": "John Doe",
+    "age": 35,
+    "gender": "Male",
+    "patient_id": "e14efee8-2fd0-4b3c-89ac-95562a379a0a"
+  },
+  "diagnosis": {
+    "epilepsy_type": "Focal",
+    "severity_level": "Moderate",
+    "age_at_onset": 25,
+    "diagnosis_date": "2020-01-15",
+    "seizure_types": []
+  },
+  "seizure_analysis": {
+    "total_events": 5,
+    "date_range": {
+      "start": "2024-06-01 10:30:00",
+      "end": "2024-06-29 11:10:00"
+    },
+    "seizure_types": {
+      "Focal Aware": 5
+    },
+    "average_duration": 3.5,
+    "average_severity": 3.8,
+    "hourly_pattern": {
+      "10": 1,
+      "15": 1,
+      "9": 1,
+      "14": 1,
+      "11": 1
+    },
+    "day_of_week_pattern": {
+      "5": 5
+    },
+    "monthly_pattern": {
+      "6": 5
+    },
+    "stress_correlation": 0.045834924851410504
+  },
+  "frequency_metrics": {
+    "30_days": {
+      "total_seizures": 0,
+      "frequency_per_day": 0.0,
+      "frequency_per_week": 0.0,
+      "frequency_per_month": 0.0,
+      "analysis_period_days": 30
+    },
+    "90_days": {
+      "total_seizures": 0,
+      "frequency_per_day": 0.0,
+      "frequency_per_week": 0.0,
+      "frequency_per_month": 0.0,
+      "analysis_period_days": 90
+    }
+  },
+  "report_generated": "2025-07-19T00:00:54.924112"
+}

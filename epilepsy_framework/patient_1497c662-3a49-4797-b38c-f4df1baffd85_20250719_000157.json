@@ -1,0 +1,55 @@
+{
+  "demographics": {
+    "name": "Alice Johnson",
+    "age": 40,
+    "gender": "Female",
+    "patient_id": "1497c662-3a49-4797-b38c-f4df1baffd85"
+  },
+  "diagnosis": {
+    "epilepsy_type": "Generalized",
+    "severity_level": "Mild",
+    "age_at_onset": 16,
+    "diagnosis_date": null,
+    "seizure_types": []
+  },
+  "seizure_analysis": {
+    "total_events": 2,
+    "date_range": {
+      "start": "2024-06-01 14:30:00",
+      "end": "2024-06-15 09:15:00"
+    },
+    "seizure_types": {
+      "Absence": 2
+    },
+    "average_duration": 1.75,
+    "average_severity": 2.5,
+    "hourly_pattern": {
+      "14": 1,
+      "9": 1
+    },
+    "day_of_week_pattern": {
+      "5": 2
+    },
+    "monthly_pattern": {
+      "6": 2
+    },
+    "stress_correlation": null
+  },
+  "frequency_metrics": {
+    "30_days": {
+      "total_seizures": 0,
+      "frequency_per_day": 0.0,
+      "frequency_per_week": 0.0,
+      "frequency_per_month": 0.0,
+      "analysis_period_days": 30
+    },
+    "90_days": {
+      "total_seizures": 0,
+      "frequency_per_day": 0.0,
+      "frequency_per_week": 0.0,
+      "frequency_per_month": 0.0,
+      "analysis_period_days": 90
+    }
+  },
+  "report_generated": "2025-07-19T00:01:57.822981"
+}

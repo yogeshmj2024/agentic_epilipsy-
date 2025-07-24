@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epilepsy Public Health Informatics Framework</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .endpoint {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #007bff;
+        }
+        .method {
+            font-weight: bold;
+            color: #007bff;
+        }
+        .url {
+            font-family: monospace;
+            background-color: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+        .description {
+            margin-top: 10px;
+            color: #666;
+        }
+        .example {
+            margin-top: 10px;
+            background-color: #f1f3f4;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Epilepsy Public Health Informatics Framework</h1>
+        <p>Welcome to the Epilepsy Public Health Informatics Framework REST API. This framework provides comprehensive tools for managing patient treatments and analyzing epilepsy disorders in public health settings.</p>
+        
+        <h2>Available Endpoints</h2>
+        
+        <div class="endpoint">
+            <div class="method">POST</div>
+            <div class="url">/create_patient</div>
+            <div class="description">Create a new patient record</div>
+            <div class="example">
+Example request:
+{
+    "first_name": "John",
+    "last_name": "Doe",
+    "date_of_birth": "1990-05-15",
+    "gender": "Male"
+}
+            </div>
+        </div>
+        
+        <div class="endpoint">
+            <div class="method">POST</div>
+            <div class="url">/add_epilepsy_diagnosis</div>
+            <div class="description">Add epilepsy diagnosis to a patient</div>
+            <div class="example">
+Example request:
+{
+    "patient_id": "patient-uuid",
+    "epilepsy_type": "Focal",
+    "severity_level": "Moderate"
+}
+            </div>
+        </div>
+        
+        <div class="endpoint">
+            <div class="method">GET</div>
+            <div class="url">/list_patients</div>
+            <div class="description">List all patients</div>
+        </div>
+        
+        <div class="endpoint">
+            <div class="method">GET</div>
+            <div class="url">/patient_summary/&lt;patient_id&gt;</div>
+            <div class="description">Get comprehensive summary for a patient</div>
+        </div>
+        
+        <div class="endpoint">
+            <div class="method">POST</div>
+            <div class="url">/add_seizure_event</div>
+            <div class="description">Add a seizure event to a patient</div>
+            <div class="example">
+Example request:
+{
+    "patient_id": "patient-uuid",
+    "seizure_date": "2024-06-01T10:30:00",
+    "seizure_type": "Focal Aware",
+    "duration_minutes": 2.5,
+    "severity": 3
+}
+            </div>
+        </div>
+        
+        <div class="endpoint">
+            <div class="method">GET</div>
+            <div class="url">/statistics</div>
+            <div class="description">Get overall framework statistics</div>
+        </div>
+        
+        <p style="margin-top: 30px; text-align: center; color: #666;">
+            Use tools like curl, Postman, or any HTTP client to interact with these endpoints.
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,297 @@
+{
+  "bundle_type": "IHIA_Complete_Exchange",
+  "bundle_id": "4d14cc62-291e-4cd1-9522-00f5c554d9fd",
+  "created_timestamp": "2025-07-19T00:26:44.899627",
+  "message_envelope": {
+    "message_header": {
+      "message_id": "6ddcedd3-43a0-4d77-b01d-972218d223f2",
+      "timestamp": "2025-07-19T00:26:44.899334",
+      "sender": {
+        "organization_id": "EPILEPSY-FRAMEWORK-ORG",
+        "system_id": "EPILEPSY-FRAMEWORK-SYS-001",
+        "contact_info": "epilepsy-framework@health.org"
+      },
+      "message_type": "health_record_exchange",
+      "priority": "normal",
+      "security_classification": "protected"
+    },
+    "routing_information": {
+      "destination_systems": [
+        "HIE",
+        "EHR",
+        "PHR"
+      ],
+      "delivery_method": "secure_transport",
+      "acknowledgment_required": true
+    },
+    "payload": {
+      "content_type": "application/json",
+      "schema_reference": "IHIA-HealthRecord-v2.1",
+      "data": {
+        "record_id": "IHIA-EPILEPSY-FRAMEWORK-ORG-ad17c757-8d40-460a-ad1f-9f3d6af2d389",
+        "patient_identifier": "63731162-7ed7-4440-b785-b4e4452314c6",
+        "source_system": "EPILEPSY-FRAMEWORK-SYS-001",
+        "record_type": "comprehensive",
+        "clinical_domain": "neurology",
+        "data_elements": {
+          "demographics": {
+            "patient_name": "Emma Watson",
+            "date_of_birth": "1990-04-15",
+            "gender": "Female",
+            "identifiers": {
+              "medical_record_number": "63731162-7ed7-4440-b785-b4e4452314c6",
+              "insurance_id": null
+            }
+          },
+          "conditions": [
+            {
+              "condition_code": "ICD-10:G40.9",
+              "condition_name": "Epilepsy",
+              "condition_type": "Generalized",
+              "severity": "Mild",
+              "onset_date": "2020-01-15",
+              "clinical_status": "active"
+            }
+          ],
+          "encounters": [
+            {
+              "encounter_id": "76267723-fc4d-4c91-adf2-e1abf0b1d41b",
+              "encounter_type": "seizure_event",
+              "encounter_date": "2024-05-10T08:30:00",
+              "clinical_details": {
+                "seizure_type": "Absence",
+                "duration_minutes": 10,
+                "severity_score": 2,
+                "triggers": [],
+                "hospitalization_required": false
+              }
+            },
+            {
+              "encounter_id": "1399477d-fc4e-4cb0-a3fe-f5e8de6c6e47",
+              "encounter_type": "seizure_event",
+              "encounter_date": "2024-05-25T14:15:00",
+              "clinical_details": {
+                "seizure_type": "Absence",
+                "duration_minutes": 8,
+                "severity_score": 3,
+                "triggers": [],
+                "hospitalization_required": false
+              }
+            }
+          ],
+          "treatments": [],
+          "outcomes": []
+        },
+        "metadata": {
+          "schema_version": "IHIA-v2.1",
+          "data_format": "JSON",
+          "encoding": "UTF-8",
+          "source_system_version": "1.0.0",
+          "interoperability_standards": [
+            "FHIR R4",
+            "HL7 v2.8",
+            "OpenEHR",
+            "IHE XDS"
+          ]
+        },
+        "governance": {
+          "data_steward": "Epilepsy Framework System",
+          "privacy_classification": "Protected Health Information",
+          "retention_period": "10 years",
+          "access_controls": [
+            "authorized_healthcare_providers",
+            "patient_portal"
+          ],
+          "audit_trail": [
+            {
+              "action": "create",
+              "timestamp": "2025-07-19T00:26:44.899312",
+              "user": "system",
+              "details": "Initial record creation"
+            }
+          ],
+          "consent_status": "active",
+          "data_quality_score": 0.95
+        },
+        "created_timestamp": "2025-07-19 00:26:44.899316",
+        "last_updated": "2025-07-19 00:26:44.899317"
+      }
+    },
+    "security": {
+      "encryption_standard": "AES-256",
+      "digital_signature": "present",
+      "authentication_method": "PKI"
+    }
+  },
+  "health_record": {
+    "record_id": "IHIA-EPILEPSY-FRAMEWORK-ORG-ad17c757-8d40-460a-ad1f-9f3d6af2d389",
+    "patient_identifier": "63731162-7ed7-4440-b785-b4e4452314c6",
+    "source_system": "EPILEPSY-FRAMEWORK-SYS-001",
+    "record_type": "comprehensive",
+    "clinical_domain": "neurology",
+    "data_elements": {
+      "demographics": {
+        "patient_name": "Emma Watson",
+        "date_of_birth": "1990-04-15",
+        "gender": "Female",
+        "identifiers": {
+          "medical_record_number": "63731162-7ed7-4440-b785-b4e4452314c6",
+          "insurance_id": null
+        }
+      },
+      "conditions": [
+        {
+          "condition_code": "ICD-10:G40.9",
+          "condition_name": "Epilepsy",
+          "condition_type": "Generalized",
+          "severity": "Mild",
+          "onset_date": "2020-01-15",
+          "clinical_status": "active"
+        }
+      ],
+      "encounters": [
+        {
+          "encounter_id": "76267723-fc4d-4c91-adf2-e1abf0b1d41b",
+          "encounter_type": "seizure_event",
+          "encounter_date": "2024-05-10T08:30:00",
+          "clinical_details": {
+            "seizure_type": "Absence",
+            "duration_minutes": 10,
+            "severity_score": 2,
+            "triggers": [],
+            "hospitalization_required": false
+          }
+        },
+        {
+          "encounter_id": "1399477d-fc4e-4cb0-a3fe-f5e8de6c6e47",
+          "encounter_type": "seizure_event",
+          "encounter_date": "2024-05-25T14:15:00",
+          "clinical_details": {
+            "seizure_type": "Absence",
+            "duration_minutes": 8,
+            "severity_score": 3,
+            "triggers": [],
+            "hospitalization_required": false
+          }
+        }
+      ],
+      "treatments": [],
+      "outcomes": []
+    },
+    "metadata": {
+      "schema_version": "IHIA-v2.1",
+      "data_format": "JSON",
+      "encoding": "UTF-8",
+      "source_system_version": "1.0.0",
+      "interoperability_standards": [
+        "FHIR R4",
+        "HL7 v2.8",
+        "OpenEHR",
+        "IHE XDS"
+      ]
+    },
+    "governance": {
+      "data_steward": "Epilepsy Framework System",
+      "privacy_classification": "Protected Health Information",
+      "retention_period": "10 years",
+      "access_controls": [
+        "authorized_healthcare_providers",
+        "patient_portal"
+      ],
+      "audit_trail": [
+        {
+          "action": "create",
+          "timestamp": "2025-07-19T00:26:44.899312",
+          "user": "system",
+          "details": "Initial record creation"
+        }
+      ],
+      "consent_status": "active",
+      "data_quality_score": 0.95
+    },
+    "created_timestamp": "2025-07-19 00:26:44.899316",
+    "last_updated": "2025-07-19 00:26:44.899317"
+  },
+  "registry_entry": {
+    "registry_id": "REG-6b06fb36-64e7-4940-810a-748899c5c0c3",
+    "record_metadata": {
+      "record_id": "IHIA-EPILEPSY-FRAMEWORK-ORG-ad17c757-8d40-460a-ad1f-9f3d6af2d389",
+      "patient_identifier": "63731162-7ed7-4440-b785-b4e4452314c6",
+      "source_system": "EPILEPSY-FRAMEWORK-SYS-001",
+      "clinical_domain": "neurology",
+      "record_type": "comprehensive"
+    },
+    "availability": {
+      "status": "available",
+      "last_updated": "2025-07-19T00:26:44.899317",
+      "access_method": "API",
+      "query_endpoint": "https://api.ihia.gov/records/IHIA-EPILEPSY-FRAMEWORK-ORG-ad17c757-8d40-460a-ad1f-9f3d6af2d389"
+    },
+    "content_summary": {
+      "data_elements": [
+        "demographics",
+        "conditions",
+        "encounters",
+        "treatments",
+        "outcomes"
+      ],
+      "record_size": 1003,
+      "quality_indicators": {
+        "completeness": 0.95,
+        "accuracy": 0.95,
+        "timeliness": 0.9
+      }
+    },
+    "governance": {
+      "privacy_level": "Protected Health Information",
+      "access_controls": [
+        "authorized_healthcare_providers",
+        "patient_portal"
+      ],
+      "retention_policy": "10 years"
+    },
+    "registered_timestamp": "2025-07-19T00:26:44.899609"
+  },
+  "validation_results": {
+    "is_compliant": true,
+    "compliance_score": 1.0,
+    "validation_timestamp": "2025-07-19T00:26:44.899613",
+    "checks": [
+      {
+        "check_name": "Required Fields",
+        "description": "Verify all required IHIA fields are present",
+        "status": "pass",
+        "details": "All required fields present"
+      },
+      {
+        "check_name": "Data Format",
+        "description": "Validate data format compliance",
+        "status": "pass",
+        "details": "JSON format validated"
+      },
+      {
+        "check_name": "Privacy Controls",
+        "description": "Verify privacy and security controls",
+        "status": "pass",
+        "details": "Privacy classification and access controls defined"
+      },
+      {
+        "check_name": "Interoperability Standards",
+        "description": "Check adherence to interoperability standards",
+        "status": "pass",
+        "details": "FHIR, HL7, OpenEHR compliance verified"
+      },
+      {
+        "check_name": "Data Governance",
+        "description": "Validate data governance metadata",
+        "status": "pass",
+        "details": "Data steward and governance policies defined"
+      }
+    ]
+  },
+  "metadata": {
+    "framework_version": "IHIA-v2.1",
+    "epilepsy_framework_version": "1.0.0",
+    "export_timestamp": "2025-07-19T00:26:44.899845"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "demographics": {
+    "name": "Michael Chen",
+    "age": 39,
+    "gender": "Male",
+    "patient_id": "7b747e17-2ed3-4c02-8348-b1d7aae7a2b6"
+  },
+  "diagnosis": {
+    "epilepsy_type": "Focal",
+    "severity_level": "Severe",
+    "age_at_onset": 25,
+    "diagnosis_date": "2020-01-15",
+    "seizure_types": []
+  },
+  "seizure_analysis": {
+    "total_events": 3,
+    "date_range": {
+      "start": "2024-06-02 11:45:00",
+      "end": "2024-06-15 09:30:00"
+    },
+    "seizure_types": {
+      "Focal Aware": 1,
+      "Focal to Bilateral Tonic-Clonic": 1,
+      "Focal Impaired Awareness": 1
+    },
+    "average_duration": 200.0,
+    "average_severity": 8.0,
+    "hourly_pattern": {
+      "11": 1,
+      "16": 1,
+      "9": 1
+    },
+    "day_of_week_pattern": {
+      "5": 2,
+      "6": 1
+    },
+    "monthly_pattern": {
+      "6": 3
+    },
+    "stress_correlation": null
+  },
+  "frequency_metrics": {
+    "30_days": {
+      "total_seizures": 0,
+      "frequency_per_day": 0.0,
+      "frequency_per_week": 0.0,
+      "frequency_per_month": 0.0,
+      "analysis_period_days": 30
+    },
+    "90_days": {
+      "total_seizures": 0,
+      "frequency_per_day": 0.0,
+      "frequency_per_week": 0.0,
+      "frequency_per_month": 0.0,
+      "analysis_period_days": 90
+    }
+  },
+  "report_generated": "2025-07-19T00:26:44.903914"
+}
