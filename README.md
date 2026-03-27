@@ -1,265 +1,143 @@
-# Epilepsy Public Health Informatics Framework
+# GraphEpiRec 🧠💊
 
-A comprehensive Python framework for managing patient treatments and analyzing epilepsy disorders in public health settings.
+**Graph Convolutional Network-Based Dialogue-Driven Recommendation System for Personalised Epilepsy Treatment**
+
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://python.org)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-orange)](https://pytorch.org)
+[![License](https://img.shields.io/badge/License-GPL--3.0-green)](LICENSE)
+
+> **Authors:** M J Yogesh & Dr. Karthikeyan J  
+> School of Computer Science Engineering and Information Systems,  
+> Vellore Institute of Technology, Vellore, India  
+> Contact: yogeshmj.nie@gmail.com | karthikeyan.jk@vit.ac.in  
+
+---
 
 ## Overview
 
-The Epilepsy Public Health Informatics Framework provides a complete solution for:
-- Patient demographic and clinical data management
-- Seizure event tracking and analysis
-- Treatment plan management
-- Medication adherence monitoring
-- Statistical analysis and reporting
-- Data visualization and export capabilities
+GraphEpiRec is an open-source framework for personalised antiseizure medication (ASM) recommendation using:
+- **Relational Graph Convolutional Networks (RGCN)** over heterogeneous EHR knowledge graphs
+- **BioBERT dialogue context encoder** with attention pooling
+- **Bayesian Personalised Ranking (BPR)** loss for pairwise training
+- **Drug-interaction safety filtering** using contraindication edge propagation
 
-## Features
+The system is evaluated on a **3,641-patient epilepsy cohort** from MIMIC-IV v3.1 and achieves **Precision@5 = 0.813** and **NDCG@10 = 0.791**.
 
-### Core Functionality
-- **Patient Management**: Complete patient record system with demographics, diagnosis, and medical history
-- **Seizure Tracking**: Detailed seizure event logging with multiple parameters (type, duration, severity, triggers)
-- **Treatment Management**: Comprehensive treatment planning including medications, surgeries, and device therapies
-- **Analytics**: Advanced analytics for seizure patterns, treatment effectiveness, and population health metrics
-- **Data Validation**: Robust data validation and cleaning utilities
-- **Reporting**: Automated report generation with export capabilities
+---
 
-### Key Components
+## Repository Structure
 
-#### 1. Data Models
-- **Patient**: Demographics, diagnosis, and seizure events
-- **Treatment**: Medications, prescriptions, surgeries, and device therapies
-- **Outcomes**: Treatment effectiveness and quality of life metrics
+```
+graphepirec_repo/
+├── src/
+│   ├── graph_builder.py       # Knowledge graph construction from EHR data
+│   ├── rgcn_encoder.py        # Relational GCN encoder (L=2 layers, d=128)
+│   ├── dialogue_encoder.py    # BioBERT dialogue context encoder
+│   ├── recommendation.py      # Scoring, ranking, and BPR training
+│   └── safety_filter.py       # Drug-interaction safety checker
+├── models/
+│   ├── graphepirec.py         # Full GraphEpiRec model
+│   └── baselines.py           # CF, MF, TransE baselines
+├── utils/
+│   ├── data_loader.py         # MIMIC-IV data loading utilities
+│   ├── metrics.py             # Precision@k, NDCG@k, Jaccard
+│   └── preprocessing.py       # Feature extraction and normalisation
+├── notebooks/
+│   └── demo.ipynb             # End-to-end demo notebook
+├── tests/
+│   └── test_graphepirec.py    # Unit and integration tests
+├── requirements.txt
+└── train.py                   # Main training script
+```
 
-#### 2. Analytics Engine
-- Seizure frequency analysis
-- Pattern recognition (temporal, triggers, severity)
-- Treatment effectiveness evaluation
-- Population health statistics
-- Predictive modeling capabilities
-
-#### 3. Visualization
-- Seizure frequency trends
-- Treatment outcome charts
-- Population health dashboards
-- Calendar views of seizure events
-
-#### 4. Data Management
-- SQLite database integration
-- Data validation and cleaning
-- Export/import capabilities
-- Backup and recovery
+---
 
 ## Installation
 
-### Prerequisites
-- Python 3.7+
-- Required packages (see requirements.txt)
-
-### Setup
-1. Clone or download the framework
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run the main application:
-   ```bash
-   python main.py
-   ```
-
-## Usage
-
-### Basic Usage Example
-
-```python
-from main import EpilepsyFramework
-from datetime import datetime, date
-
-# Initialize framework
-framework = EpilepsyFramework()
-
-# Create a patient
-patient = framework.create_patient(
-    first_name="John",
-    last_name="Doe",
-    date_of_birth=date(1990, 5, 15),
-    gender="Male"
-)
-
-# Add epilepsy diagnosis
-diagnosis = framework.add_epilepsy_diagnosis(
-    patient_id=patient.patient_id,
-    epilepsy_type="Focal",
-    severity_level="Moderate",
-    age_at_onset=25
-)
-
-# Add seizure event
-event = framework.add_seizure_event(
-    patient_id=patient.patient_id,
-    seizure_date=datetime(2024, 6, 1, 10, 30),
-    seizure_type="Focal Aware",
-    duration_minutes=2.5,
-    severity=3
-)
-
-# Analyze seizure patterns
-patterns = framework.analyze_seizure_patterns(patient.patient_id)
-print(f"Total events: {patterns['total_events']}")
-print(f"Average severity: {patterns['average_severity']}")
-
-# Generate patient summary
-summary = framework.get_patient_summary(patient.patient_id)
-
-# Export data
-framework.export_patient_data(patient.patient_id)
-```
-
-### Advanced Features
-
-#### Data Validation
-```python
-from utils.validation import DataValidator
-
-validator = DataValidator()
-errors = validator.validate_patient_data(patient_data)
-if errors:
-    print(f"Validation errors: {errors}")
-```
-
-#### Analytics
-```python
-from utils.analytics import EpilepsyAnalytics
-
-analytics = EpilepsyAnalytics()
-
-# Calculate seizure frequency
-frequency = analytics.calculate_seizure_frequency(patient, days=30)
-
-# Generate visualizations
-trend_plot = analytics.plot_seizure_frequency_trend(patient)
-type_plot = analytics.plot_seizure_type_distribution(patient)
-```
-
-## Configuration
-
-The framework can be configured via `config/config.py`:
-
-- Database settings
-- Logging configuration
-- Analytics parameters
-- Export formats
-- Epilepsy-specific classifications
-
-## File Structure
-
-```
-epilepsy_framework/
-├── config/
-│   └── config.py              # Configuration settings
-├── models/
-│   ├── patient.py             # Patient data models
-│   └── treatment.py           # Treatment data models
-├── services/
-│   └── database_service.py    # Database operations
-├── utils/
-│   ├── analytics.py           # Analytics utilities
-│   └── validation.py          # Data validation
-├── tests/
-│   └── test_framework.py      # Test suite
-├── data/                      # Database and data files
-├── logs/                      # Log files
-├── reports/                   # Generated reports
-├── main.py                    # Main application
-├── requirements.txt           # Dependencies
-└── README.md                  # This file
-```
-
-## Data Models
-
-### Patient Demographics
-- Personal information (name, age, gender, contact)
-- Insurance information
-- Emergency contacts
-
-### Epilepsy Diagnosis
-- Epilepsy type (Generalized, Focal, Combined)
-- Severity level (Mild, Moderate, Severe, Refractory)
-- Age at onset
-- Diagnostic findings (EEG, MRI, genetic testing)
-- Comorbidities
-
-### Seizure Events
-- Date and time
-- Seizure type (7 standard types)
-- Duration and severity
-- Triggers and symptoms
-- Medication adherence
-- Environmental factors
-
-### Treatment Plans
-- Current and planned medications
-- Non-pharmacological treatments
-- Lifestyle modifications
-- Monitoring requirements
-- Emergency plans
-
-## Analytics Capabilities
-
-### Seizure Analysis
-- Frequency calculations (daily, weekly, monthly)
-- Pattern recognition (temporal, severity, triggers)
-- Seizure-free period tracking
-- Correlation analysis
-
-### Treatment Effectiveness
-- Seizure reduction percentage
-- Quality of life improvements
-- Side effect monitoring
-- Medication adherence tracking
-
-### Population Health
-- Demographic analysis
-- Treatment outcome statistics
-- Epidemiological trends
-- Healthcare utilization patterns
-
-## Testing
-
-Run the comprehensive test suite:
 ```bash
-python tests/test_framework.py
+git clone https://github.com/yogeshmj2024/agentic_epilipsy-.git
+cd agentic_epilipsy-/graphepirec_repo
+
+pip install -r requirements.txt
 ```
 
-The test suite covers:
-- Basic framework functionality
-- Data validation
-- Analytics capabilities
-- Export/import operations
+### Requirements
+```
+torch>=2.0.0
+torch-geometric>=2.3.0
+transformers>=4.30.0
+scikit-learn>=1.2.0
+numpy>=1.24.0
+pandas>=2.0.0
+networkx>=3.1
+tqdm>=4.65.0
+```
 
-## Contributing
+---
 
-This framework is designed for public health informatics applications. Contributions are welcome for:
-- Additional seizure types and classifications
-- Enhanced analytics algorithms
-- Improved visualization capabilities
-- Integration with electronic health records
-- Mobile application interfaces
+## Quick Start
+
+```python
+from src.graph_builder import EpilepsyKnowledgeGraph
+from models.graphepirec import GraphEpiRec
+
+# Build knowledge graph from EHR data
+kg = EpilepsyKnowledgeGraph()
+kg.load_mimic_iv(admissions_path="data/admissions.csv",
+                 prescriptions_path="data/prescriptions.csv",
+                 diagnoses_path="data/diagnoses_icd.csv")
+graph_data = kg.build()
+
+# Initialise and train GraphEpiRec
+model = GraphEpiRec(
+    num_patients=3641,
+    num_medications=42,
+    num_diagnoses=87,
+    num_comorbidities=17,
+    embedding_dim=128,
+    num_gcn_layers=2,
+    dialogue_model="dmis-lab/biobert-base-cased-v1.2"
+)
+
+model.train(graph_data, epochs=50, lr=1e-3, lambda_reg=1e-4)
+
+# Get recommendations for a patient
+patient_id = "P00247"
+dialogue_text = "Patient reports 4 focal seizures this month, sleep-deprived."
+recommendations = model.recommend(patient_id, dialogue_text, top_k=5)
+print(recommendations)
+# ['Levetiracetam', 'Lacosamide', 'Lamotrigine', 'Valproate', 'Perampanel']
+```
+
+---
+
+## Citation
+
+If you use GraphEpiRec in your research, please cite:
+
+```bibtex
+@article{yogesh2025graphepirec,
+  title   = {From Conversations to Cures: A Graph Convolutional Network Framework
+             for Dialogue-Driven Antiseizure Medication Recommendation},
+  author  = {Yogesh, M J and Karthikeyan, J},
+  journal = {Artificial Intelligence in Medicine},
+  year    = {2025},
+  note    = {Manuscript under review}
+}
+```
+
+### Key References
+
+- Kipf, T. N., & Welling, M. (2017). Semi-supervised classification with graph convolutional networks. *ICLR 2017*.
+- Schlichtkrull, M., Kipf, T. N., Bloem, P., van den Berg, R., Titov, I., & Welling, M. (2018). Modeling relational data with graph convolutional networks. *ESWC*, pp. 593–607.
+- Rendle, S., Freudenthaler, C., Gantner, Z., & Schmidt-Thieme, L. (2009). BPR: Bayesian personalised ranking from implicit feedback. *UAI*, pp. 452–461.
+- Shang, J., Xiao, C., Ma, T., Li, H., & Sun, J. (2019). GAMENet: Graph augmented memory networks for recommending medication combination. *AAAI*, 33(1), 1126–1133.
+- Yang, C., Xiao, C., Ma, F., Glass, L., & Sun, J. (2021). SafeDrug: Dual molecular graph encoders for safe drug recommendations. *IJCAI*, pp. 3735–3741.
+- Lee, J., Yoon, W., Kim, S., Kim, D., Kim, S., So, C. H., & Kang, J. (2020). BioBERT: A pre-trained biomedical language representation model. *Bioinformatics*, 36(4), 1234–1240.
+- Johnson, A., Bulgarelli, L., Pollard, T., Gow, B., Moody, B., Horng, S., Celi, L. A., & Mark, R. (2024). *MIMIC-IV (version 3.1)*. PhysioNet. https://doi.org/10.13026/kpb9-mt58
+- Tang, H., Ma, G., Intan, R., Zheng, S., Zhang, L., Hu, J., & Li, P. (2022). BrainGB: A benchmark for brain network analysis with graph neural networks. *IEEE Transactions on Medical Imaging*, 42(2), 493–506.
+
+---
 
 ## License
-
-This framework is developed for educational and research purposes in public health informatics.
-
-## Support
-
-For questions or issues:
-1. Check the test suite for usage examples
-2. Review the configuration files
-3. Examine the data models for field definitions
-4. Test with sample data before production use
-
-## Acknowledgments
-
-Developed as a comprehensive solution for epilepsy public health informatics, incorporating:
-- Clinical best practices for epilepsy management
-- Public health surveillance requirements
-- Data privacy and security considerations
-- Scalable architecture for health information systems
+GPL-3.0 © 2025 M J Yogesh, Dr. Karthikeyan J — VIT Vellore
