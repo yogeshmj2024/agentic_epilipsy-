@@ -250,7 +250,7 @@ elements.append(Paragraph("2. <b>Hybrid NLP Alignment Pipeline with Comparative 
 elements.append(Paragraph("3. <b>Methodologically Harmonized Machine Learning Evaluation:</b> Evaluated under 5-fold stratified cross-validation + independent held-out test split (n=629). Transformer AUROC reached 0.876 for 30-day recurrence and 0.839 for non-adherence (p < 0.01, DeLong's test).", bullet_style))
 elements.append(Paragraph("4. <b>Dual-Model Interpretability and Clinical Attribution:</b> Feature attribution using TreeSHAP for XGBoost [21] and Integrated Gradients for Transformer [22], identifying prior 12-month admission frequency and Medicaid insurance coverage as key drivers.", bullet_style))
 elements.append(Paragraph("5. <b>Extensive Sensitivity Analysis and Systematic Ablations:</b> Empirical disambiguation threshold sweeps (tau in [0.50, 0.80]) and systematic component/feature domain ablations.", bullet_style))
-elements.append(Paragraph("6. <b>Open-Source, Scalable Implementation:</b> Codebase supporting SQLite prototyping and PostgreSQL production deployment available at <font color='blue'><u>https://github.com/yogeshmj2024/EHR-EpSO</u></font>.", bullet_style))
+elements.append(Paragraph("6. <b>Open-Source, Scalable Implementation:</b> Codebase supporting SQLite prototyping and PostgreSQL production deployment available at <font color='blue'><u>https://github.com/yogeshmj2024/agentic_epilepsy</u></font>.", bullet_style))
 
 # Architecture Figure
 img1_path = os.path.join(fig_dir, "fig1_architecture.png")
@@ -292,10 +292,10 @@ t1_data = [
     [make_table_cell("Characteristic", is_header=True), make_table_cell("Subgroup / Metric", is_header=True), make_table_cell("Value", is_header=True, align='center')],
     [make_table_cell("Sex"), make_table_cell("Male / Female"), make_table_cell("2,119 (58.2%) / 1,522 (41.8%)", align='center')],
     [make_table_cell("Age at Admission"), make_table_cell("Mean ± SD (years)"), make_table_cell("48.3 ± 18.7", align='center')],
-    [make_table_cell("Epilepsy Subtype (ICD-10)"), make_table_cell("Focal Epilepsy (G40.1-G40.2)"), make_table_cell("1,834 (43.8%)", align='center')],
-    [make_table_cell(""), make_table_cell("Generalized Epilepsy (G40.3-G40.4)"), make_table_cell("1,012 (24.2%)", align='center')],
-    [make_table_cell(""), make_table_cell("Other / Unspecified (G40.8-G40.9)"), make_table_cell("901 (21.5%)", align='center')],
-    [make_table_cell(""), make_table_cell("Status Epilepticus (G41.x)"), make_table_cell("440 (10.5%)", align='center')],
+    [make_table_cell("Epilepsy Subtype (ICD-10)"), make_table_cell("Focal Epilepsy (G40.1-G40.2)"), make_table_cell("1,834 (43.8%)"), align='center')],
+    [make_table_cell(""), make_table_cell("Generalized Epilepsy (G40.3-G40.4)"), make_table_cell("1,012 (24.2%)"), align='center')],
+    [make_table_cell(""), make_table_cell("Other / Unspecified (G40.8-G40.9)"), make_table_cell("901 (21.5%)"), align='center')],
+    [make_table_cell(""), make_table_cell("Status Epilepticus (G41.x)"), make_table_cell("440 (10.5%)"), align='center')],
     [make_table_cell("Insurance Coverage"), make_table_cell("Medicare / Medicaid / Private"), make_table_cell("1,621 (38.7%) / 814 (19.4%) / 1,752 (41.9%)", align='center')],
     [make_table_cell("Hospital Length of Stay"), make_table_cell("Median (IQR) days"), make_table_cell("3.4 (1.8 - 7.1)", align='center')],
     [make_table_cell("Primary Outcomes"), make_table_cell("30-Day Recurrence / Non-Adherence"), make_table_cell("939 (22.4%) / 1,461 (34.9%)", align='center')]
@@ -463,7 +463,7 @@ elements.append(Paragraph(
 elements.append(Spacer(1, 6))
 elements.append(Paragraph("Declarations & Compliance Statements", h2_style))
 elements.append(Paragraph("<b>AI Use Disclosure:</b> In compliance with publishing guidelines, AI coding tools were used solely for code formatting and syntax verification. All scientific concepts, dataset curation, model implementations, and analyses were independently performed by the authors.", bullet_style))
-elements.append(Paragraph("<b>Data & Code Availability:</b> MIMIC-IV v3.1 is available on PhysioNet under a DUA. Framework code is open-source at <font color='blue'><u>https://github.com/yogeshmj2024/EHR-EpSO</u></font>.", bullet_style))
+elements.append(Paragraph("<b>Data & Code Availability:</b> MIMIC-IV v3.1 is available on PhysioNet under a DUA. Framework code is open-source at <font color='blue'><u>https://github.com/yogeshmj2024/agentic_epilepsy</u></font>.", bullet_style))
 elements.append(Paragraph("<b>Funding & Conflicts:</b> No external funding was received. The authors declare no competing interests.", bullet_style))
 
 doc.build(elements)

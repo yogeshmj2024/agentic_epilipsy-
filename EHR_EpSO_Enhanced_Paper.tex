@@ -71,7 +71,7 @@ The key contributions of this work are as follows:
     \item \textbf{Methodologically Harmonized Machine Learning Evaluation:} Resolving evaluation protocol ambiguities common in prior work, we evaluate predictive models under a combined 5-fold stratified cross-validation and independent held-out test split ($n=629$). A Transformer encoder architecture achieves superior discrimination (AUROC 0.876 for 30-day seizure recurrence; 0.839 for medication non-adherence) compared to XGBoost \cite{chen2016xgboost} and BiLSTM \cite{hochreiter1997long} baselines ($p < 0.01$, DeLong's test).
     \item \textbf{Dual-Model Interpretability and Clinical Attribution:} We present comprehensive model interpretability using TreeSHAP for XGBoost \cite{lundberg2017unified} and Integrated Gradients for the Transformer \cite{sundararajan2017axiomatic}. We identify prior 12-month admission frequency and Medicaid insurance coverage as key actionable drivers of seizure recurrence and non-adherence, respectively.
     \item \textbf{Extensive Sensitivity Analysis and Systematic Ablations:} We provide empirical sensitivity sweeps over the vector disambiguation threshold $\tau \in [0.50, 0.80]$ and conduct rigorous ablation studies confirming the incremental contribution of each pipeline component and feature set.
-    \item \textbf{Open-Source, Scalable Implementation:} Framework code, preprocessing scripts, FHIR conversion modules, and database adapters (supporting SQLite for local prototyping and PostgreSQL for hospital-scale concurrent throughput) are made publicly available at \url{https://github.com/yogeshmj2024/EHR-EpSO}.
+    \item \textbf{Open-Source, Scalable Implementation:} Framework code, preprocessing scripts, FHIR conversion modules, and database adapters (supporting SQLite for local prototyping and PostgreSQL for hospital-scale concurrent throughput) are made publicly available at \url{https://github.com/yogeshmj2024/agentic_epilepsy}.
 \end{itemize}
 
 \section{Related Work}
@@ -439,7 +439,7 @@ EHR-EpSO is an open-source, FHIR R4-compliant informatics framework for populati
 
 \paragraph{Data Availability Statement:} MIMIC-IV v3.1 is available on PhysioNet (\url{https://physionet.org/content/mimiciv/3.1/}) under a credentialed Data Use Agreement. 
 
-\paragraph{Code Availability Statement:} All framework source code, preprocessing scripts, FHIR conversion modules, and training pipelines are publicly available at \url{https://github.com/yogeshmj2024/EHR-EpSO}.
+\paragraph{Code Availability Statement:} All framework source code, preprocessing scripts, FHIR conversion modules, and training pipelines are publicly available at \url{https://github.com/yogeshmj2024/agentic_epilepsy}.
 
 \paragraph{Funding and Competing Interests:} This research received no external funding. The authors declare no competing interests.
 
