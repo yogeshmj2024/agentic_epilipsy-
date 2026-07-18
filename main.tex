@@ -87,7 +87,7 @@ The GraphEpiRec architecture consists of three principal modules: (1) a heteroge
 
 \begin{figure}[t]
     \centering
-    \includegraphics[width=0.95\textwidth]{figures/graphepirec_architecture.png}
+    \includegraphics[width=0.95\textwidth]{figures/graphepirec_architecture.pdf}
     \caption{\textbf{GraphEpiRec Architectural Overview.} \emph{Left (Column A):} Heterogeneous EHR Knowledge Graph containing four node types and six semantic edge types. \emph{Centre (Column B):} Two-layer Relational Graph Convolutional Network (RGCN) generating 128-dimensional patient and medication node embeddings. \emph{Right (Column C):} BioBERT clinical note context encoder with trainable query attention pooling. The representations are combined via a Gated Multimodal Fusion Unit and ranked using a bilinear scoring function trained with Bayesian Personalised Ranking (BPR) loss.}
     \label{fig:architecture}
 \end{figure}
@@ -114,7 +114,7 @@ The edge set $\mathcal{E}$ incorporates six semantically distinct relation types
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.75\textwidth]{figures/graphepirec_subgraph.png}
+    \includegraphics[width=0.75\textwidth]{figures/graphepirec_subgraph.pdf}
     \caption{\textbf{Illustrative Subgraph of the GraphEpiRec Knowledge Graph.} Demonstrating heterogeneous node connections and relation-specific edges including explicit drug interactions and diagnostic contraindications.}
     \label{fig:subgraph}
 \end{figure}
@@ -230,7 +230,7 @@ Table~\ref{tab:main_results} summarizes recommendation performance across all mo
 
 \begin{figure}[t]
     \centering
-    \includegraphics[width=0.95\textwidth]{figures/graphepirec_performance.png}
+    \includegraphics[width=0.95\textwidth]{figures/graphepirec_performance.pdf}
     \caption{\textbf{GraphEpiRec Recommendation Performance Analysis.} \emph{Left:} Performance across six recommendation metrics. \emph{Right:} Precision@1 stratified across five clinical epilepsy subtypes.}
     \label{fig:performance}
 \end{figure}
@@ -301,7 +301,7 @@ Additive Fusion (Eq. 3 addition) & 0.778 & 0.472 & 0.768 & 2.0\% & $-0.023$ \\
 BCE Loss (vs BPR Loss) & 0.764 & 0.461 & 0.755 & 2.4\% & $-0.036$ \\
 \bottomrule
 \end{tabular}
-\end{table">
+\end{table}
 
 Key findings from the ablation study include:
 \begin{itemize}[leftmargin=*]
@@ -315,7 +315,7 @@ Ensuring medication safety is paramount in clinical decision support. We evaluat
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.85\textwidth]{figures/graphepirec_safety_ablation.png}
+    \includegraphics[width=0.85\textwidth]{figures/graphepirec_safety_ablation.pdf}
     \caption{\textbf{Clinical Safety and Gated Weight Evaluation.} \emph{Left:} NDCG@10 as a function of text fusion gate scale. \emph{Right:} Top-5 recommendation Drug-Drug Interaction (DDI) violation rates (\%). GraphEpiRec reduces DDI violations to $1.7\%$, significantly below collaborative filtering ($4.8\%$) and matrix factorization ($5.1\%$).}
     \label{fig:safety}
 \end{figure}
