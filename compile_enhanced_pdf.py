@@ -250,7 +250,7 @@ elements.append(Paragraph("2. <b>Hybrid NLP Alignment Pipeline with Comparative 
 elements.append(Paragraph("3. <b>Methodologically Harmonized Machine Learning Evaluation:</b> Evaluated under 5-fold stratified cross-validation + independent held-out test split (n=629). Transformer AUROC reached 0.876 for 30-day recurrence and 0.839 for non-adherence (p < 0.01, DeLong's test).", bullet_style))
 elements.append(Paragraph("4. <b>Dual-Model Interpretability and Clinical Attribution:</b> Feature attribution using TreeSHAP for XGBoost [21] and Integrated Gradients for Transformer [22], identifying prior 12-month admission frequency and Medicaid insurance coverage as key drivers.", bullet_style))
 elements.append(Paragraph("5. <b>Extensive Sensitivity Analysis and Systematic Ablations:</b> Empirical disambiguation threshold sweeps (tau in [0.50, 0.80]) and systematic component/feature domain ablations.", bullet_style))
-elements.append(Paragraph("6. <b>Open-Source, Scalable Implementation:</b> Codebase supporting SQLite prototyping and PostgreSQL production deployment available at <font color='blue'><u>https://github.com/yogeshmj2024/EHR-EpSO</u></font>.", bullet_style))
+elements.append(Paragraph("6. <b>Open-Source, Scalable Implementation:</b> Codebase supporting SQLite prototyping and PostgreSQL production deployment available at <font color='blue'><u>https://github.com/yogeshmj2024/agentic_epilepsy</u></font>.", bullet_style))
 
 # Architecture Figure
 img1_path = os.path.join(fig_dir, "fig1_architecture.png")
@@ -463,7 +463,7 @@ elements.append(Paragraph(
 elements.append(Spacer(1, 6))
 elements.append(Paragraph("Declarations & Compliance Statements", h2_style))
 elements.append(Paragraph("<b>AI Use Disclosure:</b> In compliance with publishing guidelines, AI coding tools were used solely for code formatting and syntax verification. All scientific concepts, dataset curation, model implementations, and analyses were independently performed by the authors.", bullet_style))
-elements.append(Paragraph("<b>Data & Code Availability:</b> MIMIC-IV v3.1 is available on PhysioNet under a DUA. Framework code is open-source at <font color='blue'><u>https://github.com/yogeshmj2024/EHR-EpSO</u></font>.", bullet_style))
+elements.append(Paragraph("<b>Data & Code Availability:</b> MIMIC-IV v3.1 is available on PhysioNet under a DUA. Framework code is open-source at <font color='blue'><u>https://github.com/yogeshmj2024/agentic_epilepsy</u></font>.", bullet_style))
 elements.append(Paragraph("<b>Funding & Conflicts:</b> No external funding was received. The authors declare no competing interests.", bullet_style))
 
 doc.build(elements)
